@@ -87,6 +87,7 @@ body {
     display: block;
 }
 
+
     .nav-links {
         position: static;
         flex-direction: row;
@@ -142,6 +143,10 @@ body {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .project-cards {
+        flex-direction: row;
+    }
     .card {
         flex: 1;
     }

@@ -210,8 +210,20 @@ body{
 }
 
 /* sections */
-.section{margin-top:1.4rem;padding:1.6rem;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow: 0 8px 26px rgba(2,6,23,0.5);transition:transform var(--transition),opacity var(--transition);opacity:0;transform:translateY(8px)}
-.section.reveal{opacity:1;transform:none}
+.section{
+  margin-top:1.4rem;
+  padding:1.6rem;
+  border-radius:12px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  box-shadow: 0 8px 26px rgba(2,6,23,0.5);
+  transition: opacity var(--transition), transform var(--transition);
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  display: none;
+}
+.section.reveal{opacity:1;transform:none;pointer-events: auto;display: block}
+.section.hidden{opacity: 0;transform: translateY(20px);pointer-events: none;display: none}
 
 /* skills */
 .skills-list{display:flex;flex-wrap:wrap;gap:0.6rem;margin-top:0.8rem}
@@ -224,7 +236,7 @@ body{
 
 /* projects */
 .project-cards{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1rem}
-.card{background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1.2rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03);transition: transform 280ms cubic-bezier(.2,.9,.2,1), box-shadow 280ms}
+.card{background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1.2rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03);transition: transform 280ms cubic-bezier(.2,.9,.2,1), box-shadow 280ms cubic-bezier(.2,.9,.2,1)}
 .card h3{margin-bottom:0.4rem}
 .project-card{cursor:pointer}
 .project-card:hover, .project-card:focus{
@@ -243,7 +255,7 @@ body{
 
 .follow-note{color:var(--muted);font-size:0.95rem;margin-bottom:0.6rem}
 .social-icons{display:flex;flex-wrap:wrap;gap:0.5rem}
-.social-btn{width:40px;height:40px;border-radius:50%;display:inline-grid;place-items:center;border:1.5px solid rgba(255,255,255,0.08);color:#fff;text-decoration:none;font-weight:700;background:transparent;transition:all 160ms ease;font-size:0.85rem}
+.social-btn{width:40px;height:40px;border-radius:50%;display:inline-grid;place-items:center;border:1.5px solid rgba(255,255,255,0.08);color:#fff;text-decoration:none;font-weight:700;background:transparent;transition: all 200ms ease}
 .social-btn:hover{transform:translateY(-4px);background:linear-gradient(90deg,var(--accent-1),var(--accent-2));color:#081126;border-color:transparent}
 .social-btn svg{width:18px;height:18px;fill:#fff}
 .social-btn:hover svg{fill:#081126}

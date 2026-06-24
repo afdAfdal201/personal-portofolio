@@ -564,7 +564,7 @@ button:focus-visible,
     border: 1px solid rgba(255,255,255,0.03);
 }
 
-.sketch-photo- frame {
+.sketch-photo-frame {
     position: relative;
     width: 100%;
     aspect-ratio: 1; /* keeps photo boxes square */

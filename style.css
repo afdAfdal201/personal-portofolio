@@ -105,6 +105,22 @@ body{
   outline: none;
 }
 
+/* logo & avatar images */
+.logo-img{
+  width:42px;
+  height:42px;
+  object-fit:cover;
+  border-radius:50%;
+  display:block;
+}
+.avatar-img{
+  width:72px;
+  height:72px;
+  object-fit:cover;
+  border-radius:50%;
+  display:block;
+}
+
 /* hamburger for small screens - default hidden on desktop */
 .hamburger-icon{
   display:none; /* hide by default on desktop */
